@@ -1,2 +1,2 @@
 # docs
-📜 Documentation for the Ariadne project
+📜 Markdown documentation for the Ariadne project
