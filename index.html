@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="assets/ariadnelogos/Logomark.png" rel="icon" />
+<title>Documentation | Ariadne</title>
+<meta name="description" content="Helping you find your way around the web">
+<meta name="author" content="Juris Adorna and Jared Dantis">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+<!-- Colors Css -->
+<link rel="stylesheet" type="text/css" href="assets/css/color-purple.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg bg-dark navbar-text-light navbar-dropdown-dark border-0">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+		<!-- Logo --> 
+        <a class="logo ml-md-3" href="index.html" title="Ariadne"> <img src="assets/ariadnelogos/Logomark.png" alt="Ariadne"/> </a>
+		<span class="text-2 text-light ml-2"><img src="assets/ariadnelogos/Logotype.png" alt="Ariadne"/>  v0.1.2</span> 
+        <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+        
+		<div id="header-nav" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li><a target="_blank" href="go.dantis.me/ariadne">Website</a></li>
+            <li><a target="_blank" href="mailto:ariadne@dantis.me">Contact Us</a></li>
+            <li><a target="_blank" href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign">Theme</a></li>
+          </ul>
+        </div>
+        <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+          <li class="social-icons-github"><a data-toggle="tooltip" href="github.com/wsg-ariadne/" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+          <li class="social-icons-google"><a data-toggle="tooltip" href="chrome.google.com/webstore/detail/ariadne/dpnmlgmdfkpbbmjilppkbkhahmlckajg?" target="_blank" title="" data-original-title="Chrome Web Store"><i class="fab fa-chrome"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link" href="#docs_start">Home</a>
+        <li class="nav-item"><a class="nav-link" href="#user_start">For Users</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#user_installation">Installation</a></li>
+            <li class="nav-item"><a class="nav-link" href="#user_usage">Usage</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#ud_layout">For User-Developers</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#ud_installation">Installation</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ud_usage">Usage</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ud_architecture">Architecture</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#dev_start">For Developers</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#dev_ariadne">Ariadne</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dev_calliope">Calliope</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dev_janus">Janus</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dev_dionysus">Dionysus</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dev_olympus">Olympus</a></li>
+          </ul>
+		</li>
+		<li class="nav-item"><a class="nav-link" href="#about_start">About Ariadne</a></li>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="#about_team">The Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about_license">Licensing</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://wsg-ariadne.github.io/privacy/">Privacy Policy</a></li>
+      </ul>
+    </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <!-- HOME
+		============================ -->
+        <section id="docs_start">
+        <h1>Documentation</h1>
+        <p class="lead">Thank you so much for your interest in <b>Ariadne</b>!</p>
+        <p><b>Ariadne</b> is a browser extension that helps you become aware of <a href="https://deceptive.design">deceptive patterns</a> in cookie banners on the Web. It does this through a set of specifically-trained machine learning models that detect deceptive design patterns within the language and the design of cookie banners.</p>
+        <p><b>Ariadne (v.0.1.2)</b> is part of an ongoing research project on the automated detection of deceptive design in cookie banners.</p>
+		
+        <p class="alert alert-secondary">Alpha Testing for Ariadne is <b>open to the public</b>! Help us assess and improve Ariadne by <a target="_blank" href="https://sites.google.com/up.edu.ph/wsg-ariadne/alpha-testing">participating in as an Alpha Tester</a>. Alpha testing is only open until <b>May 31, 2023</b>.</p>
+        </section>
+        
+		<hr class="divider">
+
+    <!-- FOR USERS
+      ============================ -->
+      <section id="user_start">
+        <h1>For Users</h1>
+        <h2 id="user_installation">Installation</h2>
+          <p>At the time of writing, users can install Ariadne on Google Chrome and other Chromium-based browser. Ariadne can be installed directly onto the browser from the Chrome Web Store. Just click the Chrome Web Store badge below.</p>
+            <center><a href="https://chrome.google.com/webstore/detail/ariadne/dpnmlgmdfkpbbmjilppkbkhahmlckajg"><img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/iNEddTyWiMfLSwFD6qGq.png" width="150" alt="Available in the Chrome Web Store" /></a></center>
+        
+        <h2 id="user_usage">Usage</h2>
+          <p>Upon installation, the browser extension displays information upon <b>clicking the icon</b> on the top bar of the browser or from the dropdown selection of browser extensions. For ease of accessibility, you can pin this onto the browser so that the icon appears next to your URL bar.</p>
+          <p>Ariadne's icon has an <b>indicator</b> that flags whether or not deceptive patterns are detected in the website currently opened.</p>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-sm">
+                <img src="assets/usage/icon_inactive.png"> 
+                <p><small>Ariadne's icon looks like this when deceptive patterns are not detected.</small></p>
+              </div>
+              <div class="col-sm">
+                <img src="assets/usage/icon_active.png">
+                <p><small>Ariadne's icon looks like this when deceptive patterns are detected.</small></p>
+              </div>
+            </div>
+          </div>
+          
+          <p>The console displays a wealth of information. Most importantly, it flags whether or not deceptive patterns were detected on the page. If detected, the browser extension has a <b>purple banner</b> at the top of the console, indicating that the cookie banner on the page may be making use of unclear language, weighted options, or both.</p>
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-sm">
+                <img src="assets/usage/banner_inactive.png"> 
+                <p><small>Ariadne's banner looks like this when deceptive design is not detected.</small></p>
+              </div>
+              <div class="col-sm">
+                <img src="assets/usage/banner_active.png">
+                <p><small>Ariadne's banner looks like this when deceptive design is detected.</small></p>
+              </div>
+            </div>
+          </div>
+
+          <h4>Reporting Feature</h4>
+          <p>You can also view whether the website you're on has been previously reported by other users for having used deceptive design.</p>
+          
+          <p><b>You can submit your own report by clicking the report button at the bottom or pressing the thumbs up or thumbs down at the banner.</b> These reports can be viewed on Ariadne's dashboard, <a href="https://ariadne.dantis.me/">Olympus</a>.</p>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm text-center">
+                <img src="assets/usage/interface_inactive.png"> 
+              </div>
+              <div class="col-sm">
+                <p>At the banner, you can confirm or correct Ariadne's readings by clicking the thumbs up or thumbs down button.</p>
+                <p>At the bottom, you can click the "Report deceptive design on this page" button to report deceptive patterns in the website you currently have opened.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+    <hr class="divider">
+
+      <!-- FOR USER-DEVELOPERS
+      ============================ -->
+      <section id="ud_start">
+        <h1>For User-Developers</h1>
+        <div class="alert alert-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+            <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+          </svg>
+          <b>Heads up!</b> This section is still under construction. Please check back later!
+        </div>
+
+        <h2 id="ud_installation">Installation</h2>
+          <p>The latest builds of Ariadne are published on the <a href="https://github.com/wsg-ariadne/ariadne/releases/latest">Releases page.</a></p>
+
+          <h3 id="firefox">Firefox</h3>
+
+          <ul>
+            <li>Download the <strong><code class="language-plaintext highlighter-rouge">ariadne-mv2</code></strong> ZIP file.</li>
+            <li>Go to <code class="language-plaintext highlighter-rouge">about:debugging#/runtime/this-firefox</code> in Firefox.</li>
+            <li>Click on <code class="language-plaintext highlighter-rouge">Load Temporary Add-on...</code> and select the ZIP file.</li>
+          </ul>
+
+          <h3 id="google-chrome-chromium">Google Chrome, Chromium</h3>
+
+          <p>You can install it the browser extension manually:</p>
+
+          <ul>
+            <li>Download the <strong><code class="language-plaintext highlighter-rouge">ariadne-mv3</code></strong> ZIP file.</li>
+            <li>Go to <code class="language-plaintext highlighter-rouge">chrome://extensions</code> in Chrome.</li>
+            <li>Enable <code class="language-plaintext highlighter-rouge">Developer mode</code> in the top right corner.</li>
+            <li>Drag and drop the ZIP file into the browser window.</li>
+          </ul>
+
+        <p>The process should be similar for other Chromium-based browsers (Edge, Opera, Brave, etc.), just make sure to enable the developer mode in the extensions page before installing the extension.</p>
+
+        <p>Ariadne should now be installed. You can now visit any website and click on the extension icon to see stats for the current page.</p>
+        
+      </section>
+    <hr class="divider">
+
+    <!-- FOR DEVELOPERS
+    ============================ -->
+    <section id="dev_start">
+      <h1>For Developers</h1>
+      <div class="alert alert-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+          <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+        </svg>
+        <b>Heads up!</b> This section is still under construction. Please check back later!
+      </div>
+
+      <h2 id="dev_ariadne">Ariadne</h2>
+        <p>Ariadne is compliant with Manifest V3, the new extension API for Google Chrome and Chromium-based browsers. It is also compatible with Firefox, for which it uses the older Manifest V2 API, since the V3 API is not yet fully supported <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1578284">as of the time of writing.</a></p>
+
+        <h4 id="prerequisites">Prerequisites</h4>
+
+        <p>You will need <a href="https://nodejs.org/en/">Node.js</a> (v16 or higher). We recommend installing the latest LTS version.</p>
+        
+        <p>Install the dependencies:</p>
+        
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span>
+        </code></pre></div></div>
+        
+        <h4 id="building">Building</h4>
+        
+        <p>To build the extension <strong>in development mode</strong>, run:</p>
+        
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Firefox</span>
+        npm run dev
+        <span class="c"># Chrome</span>
+        npm run dev:v3
+        </code></pre></div></div>
+        
+        <p>Vite will automatically rebuild the extension when you make changes to the source code. You will need to reload the extension in your browser to see the changes.</p>
+        
+        <p>In development mode, the extension will attempt to contact <a href="https://github.com/wsg-ariadne/dionysus">Dionysus</a> at <code class="language-plaintext highlighter-rouge">http://localhost:5000</code> for the data. Make sure to run Dionysus locally before running the extension in this mode. You can change this by setting the <code class="language-plaintext highlighter-rouge">VITE_API_URL</code> environment variable in the <code class="language-plaintext highlighter-rouge">.env.development</code> file.</p>
+        
+        <p>To build the extension <strong>in production mode</strong>, run:</p>
+        
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Firefox</span>
+        npm run build
+        <span class="c"># Chrome</span>
+        npm run build:v3
+        </code></pre></div></div>
+        
+        <p>In production mode, the extension will attempt to contact Dionysus at <code class="language-plaintext highlighter-rouge">https://ariadne.dantis.me</code>. You can change this by setting the <code class="language-plaintext highlighter-rouge">VITE_API_URL</code> environment variable in the <code class="language-plaintext highlighter-rouge">.env.production</code> file.</p>
+        
+        <h4 id="installing">Installing</h4>
+        
+        <p>The built extension files will be stored in <code class="language-plaintext highlighter-rouge">dist/</code> for Firefox and <code class="language-plaintext highlighter-rouge">dist-v3/</code> for Chrome. You can load the extension in your browser by following the instructions in the <a href="#installation">Installation</a> section, but instead of loading the ZIP file,</p>
+        
+        <ul>
+          <li>load the <code class="language-plaintext highlighter-rouge">manifest.json</code> file in <code class="language-plaintext highlighter-rouge">dist/</code> for Firefox, or</li>
+          <li>click <code class="language-plaintext highlighter-rouge">Load unpacked</code> and select the <code class="language-plaintext highlighter-rouge">dist-v3/</code> directory for Chrome.</li>
+        </ul>
+      
+        <h2 id="dev_calliope">Calliope</h2>
+        <p>📜 <a href="https://github.com/wsg-ariadne/calliope">Calliope</a> is the language clarity model for <a href="https://github.com/wsg-ariadne/ariadne">Ariadne</a>.</p>
+        
+        <p>Janus is a Naive-Bayes classifier that is meant to process the text from a cookie banner and classify it into the following classes:</p>
+        
+        <ol>
+          <li><code class="language-plaintext highlighter-rouge">GOOD</code> indicating that the language used in the extract is likely to be clear, descriptive, and provides options to provide or deny cookie consent</li>
+          <li><code class="language-plaintext highlighter-rouge">BAD</code> indicating that the language used in the extract is likely to be confusing, vague, and assuming that cookie consent will be provided</li>
+        </ol>
+        
+        <p>This classifier allows <a href="https://github.com/wsg-ariadne/ariadne">Ariadne</a> to determine whether a website uses deceptive design in the form of unclear language on its cookie banner.</p>
+        
+        <h2 id="dev_janus">Janus</h2>
+          <p>⚖️ <a href="https://github.com/wsg-ariadne/janus">Janus</a> is the option weight model for <a href="https://github.com/wsg-ariadne/ariadne">Ariadne</a>.</p>
+          
+          <p>Janus is an image classifier based on the VGG-19 model that classifies images into the following classes:</p>
+          
+          <ol>
+            <li><code class="language-plaintext highlighter-rouge">absent</code> indicating that the option to refuse cookies is not on the interface at all</li>
+            <li><code class="language-plaintext highlighter-rouge">weighted</code> indicating that the option to refuse cookies is made less obvious, less visible, or more tedious to select than the option to accept it</li>
+            <li><code class="language-plaintext highlighter-rouge">even</code> indicating that the options to accept and refuse cookies appear on the cookie banner and are equally obvious.</li>
+          </ol>
+          
+          <p>This classifier allows <a href="https://github.com/wsg-ariadne/ariadne">Ariadne</a> to determine whether a website uses deceptive design in the form of weighted options on its cookie banner.</p>
+        
+        <h2 id="dev_dionysus">Dionysus</h2>
+        <p>📚 <a href="https://github.com/wsg-ariadne/dionysus">Dionysus</a> is the backend for the Ariadne project. It is made up of three parts:</p>
+        
+        <ol>
+          <li>An instance of the <a href="https://github.com/wsg-ariadne/calliope">Calliope</a> model, which classifies cookie banner text as ‘good’ (i.e., clear enough, likely not deceptive) or ‘bad’ (i.e., intent is not clear, likely deceptive).</li>
+          <li>An instance of the <a href="https://github.com/wsg-ariadne/janus">Janus</a> model, which classifies options or checkboxes in a cookie banner screencapture as ‘absent’ (no options detected), ‘even’ (evenly-weighted options detected), or ‘weighted’ (unevenly-weighted options detected).</li>
+          <li>A connection to a PostgreSQL database that stores user-generated reports of deceptive design in webpages, along with a <a href="#api">REST API</a> that allows for report management and model usage.</li>
+        </ol>
+        
+        <h2 id="dev_olympus">Olympus</h2>
+        <p>🌋 <a href="https://github.com/wsg-ariadne/olympus">Olympus</a> is the web-based dashboard for the Ariadne project. It works with <a href="https://github.com/wsg-ariadne/olympus">Dionysus</a> to display summary statistics of all the user-submitted reports of deceptive design, along with a preview of the most recent reports. It is powered by <a href="https://nuxt.com/">Nuxt v3</a> and <a href="https://tailwindcss.com/">Tailwind CSS</a>.</p>
+        
+        <p>Olympus also makes use of the <a href="https://auth0.com">Auth0</a> SDK, which allows for login functionality. At the moment Olympus does not include functionality that necessitates login, but in the future this could allow administrators to delete reports on user request, allow registered users to verify, dispute, and comment on reports, etc., although this is not currently planned and is beyond the current scope of the Ariadne research project.</p>
+        
+    </section>
+  <hr class="divider">
+
+    <!-- ABOUT ARIADNE
+    ============================ -->
+    <section id="about_start">
+      <h1>About Ariadne</h1>
+      <p>Ariadne (v.0.1.2) is part of an ongoing research project on the automated detection of deceptive design in cookie banners. This research project is conducted in fulfillment of the requirements for <b>CS 199</b> in the academic year 2022-2023 under the <a href="https://webscience.dcs.upd.edu.ph">Web Science Group</a>.</p>
+
+      <h3 id="about_team">The Team</h3>
+      <p>Ariadne's developers are Juris Adorna and Jared Dantis who are computer science undergraduate students from the University of the Philippines - Diliman. </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm text-center">
+            <img src="assets/about/team_now.JPG"> 
+          </div>
+          <div class="col-sm text-center">
+            <img src="assets/about/team_then.jpg"> 
+          </div>
+        </div>
+      </div>
+      <p>Feel free to reach out to the team through <a href="mailto:ariadne@dantis.me">ariadne@dantis.me</a> for any feedback, queries, or concerns regarding Ariadne.</p>
+      
+      
+
+    </section>
+  <hr class="divider">
+
+  </div>
+</div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li><a data-toggle="tooltip" href="https://go.dantis.me/ariadne" target="_blank" title="Website" data-original-title="Website"><i class="fab fa-google"></i></a></li>
+        <li><a data-toggle="tooltip" href="https://github.com/wsg-ariadne" target="_blank" title="Repository" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+        <li><a data-toggle="tooltip" href="https://chrome.google.com/webstore/detail/ariadne/dpnmlgmdfkpbbmjilppkbkhahmlckajg" target="_blank" title="Chrome Web Store" data-original-title="Store"><i class="fab fa-chrome"></i></a></li>
+      </ul>
+	  <p class="text-2 text-center mb-0">This theme was designed &amp; developed by <a class="btn-link" target="_blank" href="http://www.harnishdesign.net/">HarnishDesign</a>.<br>
+    Copyright &copy; 2020 <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">iDocs</a>. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
